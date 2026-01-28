@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinanzApp - Inicia Sesión</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="login-page">
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+      <div class="login-card shadow-lg p-5 bg-white rounded">
+        <div class="login-card__logo-container text-center mb-4">
+          <img
+            src="logo.png"
+            alt="FinanzApp Logo"
+            class="login-card__logo img-fluid"
+            style="max-width: 150px"
+          />
+        </div>
+
+        <h1 class="login-card__title text-center mb-5">Inicia sesión</h1>
+
+        <form id="loginForm" class="login-form">
+          <div class="login-form__group mb-4">
+            <label class="login-form__label d-block mb-2 font-weight-bold">Usuario</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-light border-right-0">RUT</span>
+              </div>
+              <input
+                type="text"
+                id="userRut"
+                class="form-control border-left-0"
+                placeholder="12345678-9"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="login-form__group mb-4">
+            <label class="login-form__label d-block mb-2 font-weight-bold">Contraseña</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-light border-right-0">Text</span>
+              </div>
+              <input
+                type="password"
+                id="userPass"
+                class="form-control border-left-0"
+                placeholder="******"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="text-center mb-5">
+            <a
+              href="recuperar.html"
+              class="login-card__link text-decoration-none"
+              style="border-bottom: 2px solid #007bff; color: #007bff; font-weight: 500"
+            >
+              ¿Olvidaste tu contraseña?
+            </a>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-block py-3 shadow-sm login-form__button"
+            style="background-color: #007bff; font-size: 1.2rem"
+          >
+            iniciar sesión
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
